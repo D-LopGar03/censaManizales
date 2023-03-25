@@ -1,0 +1,18 @@
+<?php
+    include("model/conexion.php");
+
+    $primerNombre = "Carlos";
+    $segundoNombre = "";
+    $primerApellido = "Velez";
+    $segundoApellido = "Marín";
+    $direccion = "CL 41 B # 10-27";
+    $correo = "CL 41 B # 10-27";
+    $tel = "3122445678";
+    $fechaRegistro = "2023-03-04";
+    $Acudientes = "Juan Sebastian Velez Bedoya";
+    $Estado = "Active";
+
+    mysqli_query($conexion, "INSERT INTO Estudiantes (primerNombre, segundoNombre, primerApellido, segundoApellido, direccion, correo, telefono, fechaRegistro, Acudientes, Estado) values('$primerNombre', '$segundoNombre', '$primerApellido', '$segundoApellido', '$direccion', '$correo', '$tel', '$fechaRegistro', '$Acudientes', '$Estado')");
+
+
+?>
